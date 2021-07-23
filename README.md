@@ -1,5 +1,5 @@
 # Giphy Search!
-
+ 
 ## Instructions
 
 You're going to be building out a Gif search using the Giphy API. In this lab, 
