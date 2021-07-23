@@ -12,9 +12,9 @@ export default class GifListContainer extends Component {
     e.preventDefault()
     fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g`)
       .then(resp => resp.json())
-      .then(gifs => { console.log(gifs.data);this.setState({
-        firstThreeGifs: gifs.data
-      })})
+      .then(gifs => this.setState({
+        firstThreeGifs: gifs.data.slice(0, 3)
+      }))
   }
 
   render() {
